@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      {{> filtroemprendedor}}
+    </div>
+    <div class="col-md-auto">
+      <div class="row">
+        {{#each links}}
+        <div class="col-md-auto">
+          <div class="card pull-right" style="width: 18rem;">
+            <img src={{logo}} class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">{{nombre}}</h5>
+              <p class="card-text">{{descripcion}}</p>
+              <a href="/emprendedor/{{idemprendedor}}"  class="btn btn-primary">Ver emprendedor</a>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+{{> footer}}

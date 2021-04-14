@@ -1,0 +1,17 @@
+<!--render del perfil de producto-->
+
+{{#each producto}}
+        <div class="w-100 p-3" style="background-color: rgb(198, 195, 251);">
+          <div class="mx-auto" style="width: 450px;">
+            <img src={{foto}} class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">{{nombre}}</h5>
+              <p class="p-3 mb-2 bg-light text-dark">{{descripcion}}</p>
+              <p class="p-3 mb-2 bg-light text-dark">Precio: {{precio}}$</p>
+              <a class="btn btn-primary" href="/emprendedor/{{idEmprendedor}}">Comprar</a>
+            </div>
+          </div>
+        </div>
+{{/each}}
+
+<br>

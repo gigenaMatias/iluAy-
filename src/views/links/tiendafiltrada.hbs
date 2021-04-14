@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      {{> filtroproductos}}
+    </div>
+    <div class="col-md-auto">
+      <div class="row">
+        {{#each productofiltrado}}
+          <div class="col-md-auto">
+            <div class="card pull-right" style="width: 18rem;">
+              <img src={{foto}} alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">{{descripcion}}</h5>
+                <p class="card-text">{{precio}}$</p>
+                <a href="" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+{{> footer}}
